@@ -1,0 +1,42 @@
+/*Animaciones*/
+  
+.mi-seccion {
+    /* Estilos de la animación */
+    transition: all 2.5s ease;
+    transform: translateY(100px);
+   
+  }
+  
+  .mi-seccion.active {
+    /* Estilos de la animación cuando está activa */
+    transform: translateY(0);
+    
+  }
+  
+
+  .mi-seccion4 {
+    /* Estilos de la animación */
+    transition: transform 1.3s ease, opacity 1s ease;
+  transform: scale(0.8);
+  opacity: 0;
+  }
+  
+  .mi-seccion4.active {
+    /* Estilos de la animación cuando está activa */
+    transform: scale(1);
+  opacity: 1;
+  }
+  
+ @keyframes aparecer {
+    from {
+      transition: transform 1.3s ease, opacity 1s ease;
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+   

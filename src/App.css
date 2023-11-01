@@ -1,7 +1,7 @@
 :root{
   --negro: #000000;
   --oscuro: #626262;
-  --primario: #deab10;
+  --primario: #9872de;
   --secundario: #0b98ab;
   --blanco: #ffffff;
 }
@@ -15,28 +15,56 @@ body {
   padding: 0px;
 }
 a{
+  
   text-decoration: none;
   color: var(--blanco);
 }
 
 a:hover{
+  
   color: var(--secundario);
   
+  
 }
+.titulo2{
+  color: var(--secundario);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.titulo3{
+  color: var(--secundario);
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .titulo2{
+    font-size: 4rem; 
+  }  
+}
+
+
+
 /* BARRA DE NAVEGACION*/
 .titulo{
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
+  animation: aparecer 1.5s ease;
 }
 .navBar{
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 .links{
   display: flex;
   flex-direction: column;
+  animation: aparecer 1.5s ease;
+  
 }
 
 @media (min-width: 768px) {
@@ -54,6 +82,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
   }
   .titulo{
     text-align: left;
@@ -64,6 +93,7 @@ a:hover{
 .logo{
   text-transform: uppercase;
   color: var(--secundario);
+  animation: aparecer 1.5s ease;
 }
 
 
@@ -71,7 +101,7 @@ a:hover{
 
 .portada{
   
-  background-color: rgba(16, 18, 27, 0.728);
+  background-color: rgba(0, 0, 0, 0.728);
   
   border-bottom-left-radius: 50% 10%;
   border-bottom-right-radius: 50% 10%;
@@ -144,17 +174,12 @@ a:hover{
 }
 .fotoBartender{
   max-height: 26rem;
-  width: 100%;
+  width: 90%;
   border-radius: 3px;
+  margin: 0rem 1rem;
+  
   
 }
-.titulo2{
-  color: var(--secundario);
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 200;
-}
-
 
 .texto{
  max-width: 25rem;
@@ -290,7 +315,7 @@ a:hover{
 }
 .logoGrande{
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   background: url(assets/logo.png);
   background-position: center;
   background-repeat: no-repeat;

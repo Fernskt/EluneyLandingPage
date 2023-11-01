@@ -18,7 +18,7 @@ const Galeria = ({ photos }) => {
         {photos.map((photo, index) => (
           <div
             key={index}
-            className="photo-thumbnail"
+            className="photo-thumbnail mi-seccion4"
             onClick={() => openPhoto(photo)}
           >
             <img src={photo} className='fotito' alt={`Photo ${index}` } />
