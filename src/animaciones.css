@@ -39,4 +39,16 @@
       opacity: 1;
     }
   }
+  @keyframes barra {
+    from {
+      transition: transform 1s ease;
+     
+      transform: translateY(-50px);
+    }
+  
+    to {
+      
+      transform: translateY(0px);
+    }
+  }
    

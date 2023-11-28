@@ -21,7 +21,7 @@ const Galeria = ({ photos }) => {
             className="photo-thumbnail mi-seccion4"
             onClick={() => openPhoto(photo)}
           >
-            <img src={photo} className='fotito' alt={`Photo ${index}` } />
+            <img src={photo} className='fotito' alt={`Eluney eventos ${index}` } />
           </div>
         ))}
       </div>

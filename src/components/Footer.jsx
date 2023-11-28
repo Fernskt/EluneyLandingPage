@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
+    <>
     <div className="footer">
       <div className="logo">
         <h1>Eluney</h1>
@@ -68,5 +69,10 @@ export default function Footer() {
         </p>
       </div>
     </div>
+   
+    <div className="copyright">
+      <p>Copyright © 2023 Eluney.</p>
+    </div>
+    </>
   );
 }

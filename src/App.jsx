@@ -19,18 +19,18 @@ function App() {
 
   const photos = [
     
-    '../src/assets/fotos/foto1.jpg',
-    '../src/assets/fotos/foto2.jpg',
-    '../src/assets/fotos/foto3.jpg',
-    '../src/assets/fotos/foto4.jpg',
-    '../src/assets/fotos/foto5.jpg',
-    '../src/assets/fotos/foto6.jpg',
-    '../src/assets/fotos/foto7.jpg',
-    '../src/assets/fotos/foto8.jpg',
-    '../src/assets/fotos/foto9.jpg',
-    '../src/assets/fotos/foto10.jpg',
-    '../src/assets/fotos/foto11.jpg',
-    '../src/assets/fotos/foto12.jpg',
+    './src/assets/fotos/foto1.jpg',
+    './src/assets/fotos/foto2.jpg',
+    './src/assets/fotos/foto3.jpg',
+    './src/assets/fotos/foto4.jpg',
+    './src/assets/fotos/foto5.jpg',
+    './src/assets/fotos/foto6.jpg',
+    './src/assets/fotos/foto7.jpg',
+    './src/assets/fotos/foto8.jpg',
+    './src/assets/fotos/foto9.jpg',
+    './src/assets/fotos/foto10.jpg',
+    './src/assets/fotos/foto11.jpg',
+    './src/assets/fotos/foto12.jpg',
    
   ];
 

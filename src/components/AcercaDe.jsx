@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function AcercaDe({titulo, texto, imagen}) {
-  return (
+  return (<>
     
         <div className="acercaDe mi-seccion4">
           <div className="texto ">
@@ -15,5 +15,6 @@ export default function AcercaDe({titulo, texto, imagen}) {
 </div>
 
 </div>
+</>
 );
 }
