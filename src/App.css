@@ -223,7 +223,7 @@ a:hover{
 }
 
 .sobremi{
-  margin: 7rem 0rem 0rem;
+  margin: 7rem 0rem 10rem;
 }
 .enfasis{
   font-weight: bold;
@@ -253,11 +253,11 @@ a:hover{
   background-attachment: fixed; 
   background-position: center; 
   width: 100%;
-  height: 30rem;
+  height: 50rem;
  
 }
 .frase{
-  height: 30rem;
+  height: 50rem;
   background-color: #00000094;
   display: flex;
   justify-content: center;
@@ -370,6 +370,7 @@ a:hover{
   background-attachment: fixed;
   background-color: #000000;
   padding: 5rem 0;
+  margin-bottom: 7rem;
 }
 
 /*Footer*/
