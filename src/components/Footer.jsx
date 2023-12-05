@@ -1,4 +1,10 @@
 import React from "react";
+import imgWhatsapp from "../assets/redes/whatsapp2.png"
+import imgFace from "../assets/redes/facebook2.png"
+import imgGmail from "../assets/redes/gmail.png"
+import imgInstagram from "../assets/redes/instagram.png"
+import imgMap from "../assets/redes/map.png"
+import imgTel from "../assets/redes/tel.png"
 
 export default function Footer() {
   return (
@@ -15,25 +21,25 @@ export default function Footer() {
         <a href="#contacto">Contacto</a>
       </div>
       <div className="redes">
-        <a href="https://wa.me/1560428780" className="red">
+        <a href="https://api.whatsapp.com/send?phone=+541154969823&text=%C2%A1Hola,%20Facu!%20Quisiera%20hacerte%20una%20consulta." className="red">
           <img
-            src="./src/assets/redes/whatsapp2.png"
+            src={imgWhatsapp}
             alt="whatsapp"
             width="20"
             height="20"
           />
         </a>
-        <a href="www.facebook.com" className="red">
+        <a href="https://www.facebook.com/facundo.garcia.71697" className="red">
           <img
-            src="./src/assets/redes/facebook2.png"
+            src={imgFace}
             alt="facebook"
             width="20"
             height="20"
           />
         </a>
-        <a href="www.instagram.com" className="red">
+        <a href="https://www.instagram.com/facu.garciass/" target="blank" className="red">
           <img
-            src="./src/assets/redes/instagram.png"
+            src={imgInstagram}
             alt="instagram"
             width="20"
             height="20"
@@ -41,7 +47,7 @@ export default function Footer() {
         </a>
         <a href="gmail@gmail.com" className="red">
           <img
-            src="./src/assets/redes/gmail.png"
+            src={imgGmail}
             alt="gmail"
             width="20"
             height="20"
@@ -51,7 +57,7 @@ export default function Footer() {
       <div className="links-footer">
         <p className="red">
           <img
-            src="./src/assets/redes/tel.png"
+            src={imgTel}
             alt="whatsapp"
             width="20"
             height="20"
@@ -60,7 +66,7 @@ export default function Footer() {
         </p>
         <p className="red">
           <img
-            src="./src/assets/redes/map.png"
+            src={imgMap}
             alt="whatsapp"
             width="20"
             height="20"

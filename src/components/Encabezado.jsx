@@ -1,5 +1,6 @@
 import React, {useState , useEffect} from "react";
 import Texto from "./Texto";
+import imgLogo from '../assets/logo.png'
 
 export default function Encabezado() {
 
@@ -29,7 +30,7 @@ useEffect(() => {
       <div className="portada">
         <nav className={scrolled ? "navBar2" : "navBar"} >
           <div className="logo">
-          <img src="../src/assets/logo.png" width="50" alt="eluney eventos" />
+          <img src={imgLogo} width="50" alt="eluney eventos" />
             <h1><a href="#">  Eluney</a></h1>
           </div>
           <div className="links">
@@ -40,6 +41,7 @@ useEffect(() => {
           </div>
         </nav>
         <Texto />
+      
       </div>
       
     </div>

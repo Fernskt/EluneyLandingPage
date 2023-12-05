@@ -12,8 +12,41 @@
     <title>Servicios Eluney</title>
   </head>
   <body>
-    <script src="./src/assets/JS/animaciones.js"></script>
+   
     <div id="root"></div>
+   <!--  <script src="/src/assets/animaciones.js"></script> -->
+    <script>
+      function animateOnScroll(selector, animationClass) {
+  // Obtener todos los elementos con la clase especificada en el selector
+  var elements = document.querySelectorAll(selector);
+
+  // Crear un IntersectionObserver
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // Añadir la clase de animación para iniciar la animación
+        entry.target.classList.add(animationClass);
+      } else {
+        // Quitar la clase de animación cuando el elemento no está en el área visible
+        entry.target.classList.remove(animationClass);
+      }
+    });
+  });
+
+  // Observar cada elemento
+  elements.forEach(function(element) {
+    observer.observe(element);
+  });
+}
+
+// Reiniciar la animación cuando el usuario hace scroll
+window.addEventListener('scroll', function() {
+  animateOnScroll('.mi-seccion', 'active');
+  animateOnScroll('.mi-seccion4', 'active');
+  
+});
+    </script>
+   
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

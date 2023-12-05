@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 export default function AcercaDe({titulo, texto, imagen}) {
   return (<>
     
@@ -16,5 +17,5 @@ export default function AcercaDe({titulo, texto, imagen}) {
 
 </div>
 </>
-);
+)
 }
