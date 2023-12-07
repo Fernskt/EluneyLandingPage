@@ -3,11 +3,13 @@ import Encabezado from "./components/Encabezado";
 import AcercaDe from "./components/AcercaDe";
 import Fondo from "./components/Fondo";
 import Galeria from "./components/Galeria";
+import "./normalize.css"
 import "./App.css";
 import "./animaciones.css";
 import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 import Servicios from "./components/Servicios";
+import Contacto from "./components/Contacto";
 import WhatsappBoton from "./components/WhatsappBoton";
 import bartender from "./assets/bartender.png";
 import foto1 from "./assets/fotos/foto1.jpg";
@@ -72,6 +74,7 @@ function App() {
         <Galeria photos={photos} />
         <Logo />
         <Servicios />
+        <Contacto />
         <WhatsappBoton />
         <Footer />
       </div>
