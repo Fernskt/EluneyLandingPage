@@ -2,8 +2,8 @@ import React from 'react'
 import AcercaDe from './AcercaDe'
 import imgDj from '../assets/ilustraciones/dj.jpg'
 import imgAnim from '../assets/ilustraciones/karaoke.jpg'
-import imgTrago from '../assets/ilustraciones/trago.jpg'
-import imgMozo from '../assets/ilustraciones/mozo.jpg'
+import imgTrago from '../assets/ilustraciones/trago.png'
+import imgMozo from '../assets/ilustraciones/mozo.png'
 
 export default function Servicios() {
 

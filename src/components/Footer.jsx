@@ -77,7 +77,7 @@ export default function Footer() {
     </div>
    
     <div className="copyright">
-      <p>Copyright © 2023 Eluney.</p>
+      <p className="mi-seccion4">Copyright © 2023 Eluney.</p>
     </div>
     </>
   );
