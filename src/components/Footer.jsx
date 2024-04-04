@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import imgWhatsapp from "../assets/redes/whatsapp2.png"
 import imgFace from "../assets/redes/facebook2.png"
 import imgGmail from "../assets/redes/gmail.png"
@@ -7,6 +7,9 @@ import imgMap from "../assets/redes/map.png"
 import imgTel from "../assets/redes/tel.png"
 
 export default function Footer() {
+
+ 
+
   return (
     <>
     <div className="footer">

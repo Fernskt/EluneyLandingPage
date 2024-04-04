@@ -19,7 +19,7 @@ const manejarCambio = (e) => {
         <label htmlFor="telefono">Ingresa tu teléfono</label>
         <input type="text" name="Telefono" id="telefono" placeholder="Su número aquí" />
         <input type="hidden" name="_subject" value={nombre + " te ha enviado un Mensaje!"}/>
-        <label htmlFor="mensaje">Ingresa tu mensaje</label>
+        <label htmlFor="mensaje" required>Ingresa tu mensaje</label>
         <textarea id="mensaje" name="Mensaje" cols="30" rows="10"></textarea>
         <button type="submit" value="Enviar" className="btn">Enviar</button>
       </form>

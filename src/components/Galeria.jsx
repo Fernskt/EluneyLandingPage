@@ -1,34 +1,49 @@
 import React, { useState } from 'react';
+import ReactImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const Galeria = ({ photos }) => {
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
-  const openPhoto = (photo) => {
-    setSelectedPhoto(photo);
+  const openPhoto = (index) => {
+    setSelectedPhotoIndex(index);
   };
 
   const closePhoto = () => {
-    setSelectedPhoto(null);
+    setSelectedPhotoIndex(null);
   };
+
+  const images = photos.map(photo => ({
+    original: photo.original,
+    thumbnail: photo.thumbnail
+  }));
 
   return (
     <div className="photo-gallery" id='Galeria'>
-        <h1 className='titulo2'>Galería</h1>
+      <h1 className='titulo2'>Nuestro Trabajo</h1>
       <div className="photo-grid">
         {photos.map((photo, index) => (
           <div
             key={index}
             className="photo-thumbnail mi-seccion4"
-            onClick={() => openPhoto(photo)}
+            onClick={() => openPhoto(index)}
           >
-            <img src={photo} className='fotito' alt={`Eluney eventos ${index}` } />
+            <img src={photo.original} className='fotito' alt={`Eluney eventos ${index}`} />
           </div>
         ))}
       </div>
 
-      {selectedPhoto && (
-        <div className="photo-modal" onClick={closePhoto}>
-          <img src={selectedPhoto} alt="Selected Photo" />
+      {selectedPhotoIndex !== null && (
+        <div className="photo-modal">
+          
+          <ReactImageGallery items={images} 
+          startIndex={selectedPhotoIndex}
+          showIndex={true}
+          
+          
+          
+          />
+          <p onClick={closePhoto} className='btn-cerrar'>X</p>
         </div>
       )}
     </div>

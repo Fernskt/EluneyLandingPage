@@ -13,7 +13,12 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0px;
   padding: 0px;
+  color: var(--blanco);
 }
+h1{
+  margin: 0;
+}
+
 a{
   
   text-decoration: none;
@@ -27,6 +32,7 @@ a:hover{
   
 }
 .titulo2{
+  margin-bottom: 2.5rem;
   color: var(--secundario);
   text-align: center;
   font-size: 2.5rem;
@@ -56,66 +62,28 @@ a:hover{
   text-align: center;
   animation: aparecer 1.5s ease;
 }
-.navBar{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-}
-.navBar2{
-  position: fixed;
-  top: 0;
-  background-color: var(--negro);
-  z-index: 99;
-  animation: barra .5s ease;
-  width: 100%;
-  height: 3.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-}
-.navBar2 .links{
-  display: none;
-  
-}
 
 
 .links{
   display: flex;
   flex-direction: column;
   animation: aparecer 1.5s ease;
-  
 }
 
+.nav-link{
+  color: var(--blanco) !important;
+  animation: aparecer 1.5s ease;
+} 
 @media (min-width: 768px) {
-  .navBar{
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid;
-  }
-
-  .navBar2 .links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .links{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-  }
   .titulo{
     text-align: left;
   }
+}
+ 
+.navbar{
+  -webkit-box-shadow: 0px 1px 8px 4px rgba(0,0,0,0.64);
+  -moz-box-shadow: 0px 1px 8px 4px rgba(0,0,0,0.64);
+  box-shadow: 0px 1px 8px 4px rgba(0,0,0,0.64);
 }
 
 
@@ -130,8 +98,8 @@ a:hover{
 }
 
 .logo img{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin: 0.3rem;
 
@@ -143,9 +111,9 @@ a:hover{
 .portada{
   display: flex;
   flex-direction: column;
-  
+  padding-top: 5rem;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.728);
+  background-color: rgba(0, 0, 0, 0.706);
   -webkit-box-shadow: 2px 17px 30px -7px rgba(0,0,0,0.53);
   -moz-box-shadow: 2px 17px 30px -7px rgba(0,0,0,0.53);
   box-shadow: 2px 17px 30px -7px rgba(0,0,0,0.53);
@@ -153,14 +121,15 @@ a:hover{
 }
 .header{
 
-  background: url(assets/fotos/foto1.jpg);
+  background: url(assets/fotos/portada.jpg);
   background-position: center;
+  background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: cover;
  
 }
 .botoncito{
-  width: 1.2rem;
+  width: 1.6rem;
   background-color: #ffffffbe;
   padding: .2rem;
   border-radius: 50%;
@@ -173,7 +142,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1rem;
 }
 
@@ -205,15 +174,26 @@ a:hover{
   justify-content: center;
   color: var(--oscuro);
   margin: 1rem;
+  box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.115);
+  border-radius: 10px;
+  padding: 15px;
   
 }
 .fotoBartender{
   max-height: 26rem;
-  width: 100%;
-  border-radius: 3px;
- 
-  
-  
+  width: 90%;
+  border-radius: 10px;
+  filter: contrast(120%);
+}
+
+
+@media (max-width: 768px) {
+  .fotoBartender{
+    max-height: 26rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
 }
 
 .texto{
@@ -240,7 +220,7 @@ a:hover{
     align-items: center;
     height: 30rem;
     color: var(--oscuro);
-    margin: 0rem 10rem;
+    margin: 2rem 5rem;
     text-align: center;
   }
 
@@ -282,6 +262,17 @@ a:hover{
   align-items: center; 
   padding: 5rem 0rem 5rem;
 }
+/* .leftArrow{
+  font-size: 5rem;
+  width: 10rem;
+  text-align: center;
+}
+.rightArrow{
+  font-size: x-large;
+  width: 10rem;
+  text-align: center;
+
+} */
 
 .photo-grid {
   width: auto;
@@ -339,7 +330,7 @@ a:hover{
 
 .photo-modal {
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -348,11 +339,28 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-
+.btn-cerrar{
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: #ffffff solid 1px;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  margin: 2rem;
+  
+  
+}
 .photo-modal img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: .5rem;
 }
 
@@ -415,7 +423,7 @@ a:hover{
 .form{
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  max-width: 20rem;
 }
 
 .form label{
@@ -443,10 +451,11 @@ a:hover{
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  color: var(--blanco);
 }
 
 .btn:hover{
-  background-color: var(--oscuro);
+  background-color: rgb(18, 18, 18);
   color: var(--blanco);
   
 }

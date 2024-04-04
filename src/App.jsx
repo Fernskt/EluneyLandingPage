@@ -3,7 +3,7 @@ import Encabezado from "./components/Encabezado";
 import AcercaDe from "./components/AcercaDe";
 import Fondo from "./components/Fondo";
 import Galeria from "./components/Galeria";
-import "./normalize.css"
+import "./normalize.css";
 import "./App.css";
 import "./animaciones.css";
 import Logo from "./components/Logo";
@@ -23,7 +23,15 @@ import foto8 from "./assets/fotos/foto8.jpg";
 import foto9 from "./assets/fotos/foto9.jpg";
 import foto10 from "./assets/fotos/foto10.jpg";
 import foto11 from "./assets/fotos/foto11.jpg";
-import foto12 from "./assets/fotos/foto12.jpg";
+import foto12 from "./assets/fotos/foto18.jpg";
+import foto13 from "./assets/fotos/foto12.jpg";
+import foto14 from "./assets/fotos/foto13.jpg";
+import foto15 from "./assets/fotos/foto14.jpg";
+import foto16 from "./assets/fotos/foto15.jpg";
+import foto17 from "./assets/fotos/foto16.jpg";
+import foto18 from "./assets/fotos/foto17.jpg";
+import foto19 from "./assets/fotos/foto19.jpg";
+import foto20 from "./assets/fotos/foto20.jpg";
 
 function App() {
   const texto = (
@@ -46,18 +54,66 @@ function App() {
   );
 
   const photos = [
-    foto1,
-    foto2,
-    foto3,
-    foto4,
-    foto5,
-    foto6,
-    foto7,
-    foto8,
-    foto9,
-    foto10,
-    foto11,
-    foto12,
+    {
+      original: foto1,
+    },
+    {
+      original: foto2,
+    },
+    {
+      original: foto3,
+    },
+    {
+      original: foto4,
+    },
+    {
+      original: foto5,
+    },
+    {
+      original: foto6,
+    },
+    {
+      original: foto7,
+    },
+    {
+      original: foto8,
+    },
+    {
+      original: foto9,
+    },
+    {
+      original: foto10,
+    },
+    {
+      original: foto11,
+    },
+    {
+      original: foto12,
+    },
+    {
+      original: foto13,
+    },
+    {
+      original: foto14,
+    },
+    {
+      original: foto15,
+    },
+    {
+      original: foto16,
+    },
+    {
+      original: foto17,
+    },
+    {
+      original: foto18,
+    },
+    {
+      original: foto19,
+    },
+    {
+      original: foto20,
+    },
   ];
 
   return (

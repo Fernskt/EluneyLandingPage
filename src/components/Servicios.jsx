@@ -1,7 +1,7 @@
 import React from 'react'
 import AcercaDe from './AcercaDe'
-import imgDj from '../assets/ilustraciones/dj.jpg'
-import imgAnim from '../assets/ilustraciones/karaoke.jpg'
+import imgDj from '../assets/ilustraciones/DJ.png'
+import imgAnim from '../assets/ilustraciones/karaoke.png'
 import imgTrago from '../assets/ilustraciones/trago.png'
 import imgMozo from '../assets/ilustraciones/mozo.png'
 
