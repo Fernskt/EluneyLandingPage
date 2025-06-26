@@ -1,63 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/EluneyLandingPage/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-  crossorigin="anonymous"
-/>
-    <meta name="description" content="Eleva tu evento a nuevas alturas con nuestros servicios exclusivos. Desde exquisitos cócteles y DJs que mantienen la fiesta viva hasta animación que crea momentos inolvidables. Descubre cómo hacer de tu celebración un evento único con nosotros.">
 
-    <title>Servicios Eluney</title>
-    <script type="module" crossorigin src="/EluneyLandingPage/assets/index-dae954d5.js"></script>
-    <link rel="stylesheet" href="/EluneyLandingPage/assets/index-b2e2a09f.css">
-  </head>
-  <body>
-   
-    <div id="root"></div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <script>
-      function animateOnScroll(selector, animationClass) {
-  // Obtener todos los elementos con la clase especificada en el selector
-  var elements = document.querySelectorAll(selector);
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/EluneyLandingPage/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <meta name="description"
+    content="Eleva tu evento a nuevas alturas con nuestros servicios exclusivos. Desde exquisitos cócteles y DJs que mantienen la fiesta viva hasta animación que crea momentos inolvidables. Descubre cómo hacer de tu celebración un evento único con nosotros.">
 
-  // Crear un IntersectionObserver
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        // Añadir la clase de animación para iniciar la animación
-        entry.target.classList.add(animationClass);
-      } /* else {
+  <title>Servicios Eluney</title>
+  <script type="module" crossorigin src="/EluneyLandingPage/assets/index-04351b70.js"></script>
+  <link rel="stylesheet" href="/EluneyLandingPage/assets/index-3690b270.css">
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function animateOnScroll(selector, animationClass) {
+      // Obtener todos los elementos con la clase especificada en el selector
+      var elements = document.querySelectorAll(selector);
+
+      // Crear un IntersectionObserver
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            // Añadir la clase de animación para iniciar la animación
+            entry.target.classList.add(animationClass);
+          } /* else {
         // Quitar la clase de animación cuando el elemento no está en el área visible
         entry.target.classList.remove(animationClass);
       } */
+        });
+      });
+
+      // Observar cada elemento
+      elements.forEach(function (element) {
+        observer.observe(element);
+      });
+    }
+
+    // Reiniciar la animación cuando el usuario hace scroll
+    window.addEventListener('scroll', function () {
+      animateOnScroll('.mi-seccion', 'active');
+      animateOnScroll('.mi-seccion4', 'active');
+
     });
-  });
+  </script>
 
-  // Observar cada elemento
-  elements.forEach(function(element) {
-    observer.observe(element);
-  });
-}
-
-// Reiniciar la animación cuando el usuario hace scroll
-window.addEventListener('scroll', function() {
-  animateOnScroll('.mi-seccion', 'active');
-  animateOnScroll('.mi-seccion4', 'active');
   
-});
-    </script>
-   
-    
-  </body>
+</body>
+
 </html>
